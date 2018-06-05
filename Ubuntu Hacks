@@ -1,0 +1,28 @@
+USEFUL HACKS:
+
+1. VIRTUAL ENVIRONMENT
+
+Create virtual environments when your projects require a different version of Python. Ubuntu by default comes with a python 2.7. With Anaconda, you can set up Python 3 for the system. Different projects might require different versions of python for various reasons. Use Virtual environments to enable this.
+
+Command:
+// Create and activate virtual environment
+$ conda create -n <name_of_venv> python=<specify_version_of_python>
+$ source activate  <name_of_venv>
+
+// Deactivate i.e exit out of the environent and delete the virtual environment
+$ source deactivate <name_of_venv>
+$ conda env remove --name <name_of_venv>
+
+// Lists available virtual environments
+$ conda info --envs
+
+
+2. History of terminal
+
+Get history of commands used in terminal. Navigate to file explorer, Ctrl+h to list hidden files. Go to .bash_history file.
+
+3. Wi-Fi Problems
+
+Ubuntu often has wi-fi cnnectivity problems which can be resolved by typing the following command in the terminal.
+
+$ sudo service network-manager restart
